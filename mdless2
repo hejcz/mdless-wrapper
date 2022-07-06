@@ -1,0 +1,4 @@
+#! /bin/bash
+
+filepath="$(pwd)/$1"
+docker run --rm -i -t -v "$filepath":/file.md  mdless:latest
